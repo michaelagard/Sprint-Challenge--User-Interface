@@ -78,13 +78,16 @@ header {
     align-items: flex-end;
     justify-content: space-between;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 nav {
     display: flex;
     width: 85%;
     justify-content: space-around;
 }
 nav a {
-    text-decoration: none;
     font-size: 14px;
 }
 .top-spacer-img {
@@ -268,34 +271,41 @@ div.blog {
 }
 article.blog {
     width: 95%;
+    padding-bottom: 20px;
     border-bottom: dashed 1px black;
     margin-bottom: 25px;
 }
-
+article.blog p {
+    margin-bottom: 8px;
+}
 p.blog-time {
     font-size: 12px;
     color: gray;
-    margin: 0 5px 5px 12px;
-    padding-left: 5px;
+    margin: 0 5px 12px 12px;
+    padding: 0 0 0 5px;
     border-left: solid 3px black;
 }
-/* a tags to previous dates */
+/* a tags to previous blog dates */
 div.blog-right-content {
     flex-direction: column;
     width: 15%;
     border-left: dashed 1px black;
     padding-left: 12px;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 1.5;
+    text-align: right;
 }
-ul.blog-nav li a {
-    text-decoration: none;
+ul.blog-nav li {
+    font-size: 10px;
+    border-bottom: solid 1px grey;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    text-align: right;
 }
 footer {
     width: 100%;
     background: black;
 }
-
 footer nav {
     width: 60%;
     display: flex;
@@ -304,7 +314,6 @@ footer nav {
     padding: 20px 2%;
     font-size: 14px;
 }
-
 footer nav a {
     color: white;
     text-decoration: none;
