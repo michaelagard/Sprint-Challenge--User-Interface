@@ -97,13 +97,12 @@ nav a {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
-
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
-.top-content .about-text-container {
+.top-content {
     padding: 0 20px;
     padding-bottom: 20px;  
 }
@@ -111,6 +110,7 @@ nav a {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
+/* about page */
 .about-middle-content {
     display: flex;
     justify-content: space-between;
@@ -123,7 +123,20 @@ nav a {
 .about-middle-content p {
     margin-bottom: 20px;
 }
-button {
+section.about-bottom-content {
+    width: 95%;
+    margin: 0 auto 40px auto;
+    font-size: 15x;
+}
+/* about boxes with learn more buttons */
+.about-box {
+    width: 370px;
+    padding: 0 0 20px 0;
+    border-bottom: dashed 1px black;
+    margin-bottom: 60px;
+}
+
+.button-learn-more {
     width: 130px;
     height: 40px;
     border: solid 2px black;
@@ -132,20 +145,11 @@ button {
     font-size: 16px;
     font-weight: 700;
 }
-.about-middle-how-we-work, .about-middle-strategy, .about-middle-places-we-work, .about-middle-collaboration {
-    width: 370px;
-    padding: 0 0 20px 0;
-    border-bottom: dashed 1px black;
-    margin-bottom: 60px;
-}
 
 section.middle-content h2 {
     margin-bottom: 20px;
 }
 
-.about-middle-content {
-    display: flex;
-}
 /* boxes */
 .boxes {
     display: flex;
@@ -243,11 +247,6 @@ section.middle-content h2 {
     margin: 0 2% 20px;
     justify-content: space-around;
 }
-section.about-bottom-content {
-    width: 95%;
-    margin: 0 auto 40px auto;
-    font-size: 15x;
-}
 .bottom-content .text-container {
     padding-right: 4%;
 }
@@ -255,7 +254,43 @@ section.about-bottom-content {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+/* blog page */
+.blog-middle-content {
+    margin: 0 auto 0 auto;
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+}
+div.blog {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+article.blog {
+    width: 95%;
+    border-bottom: dashed 1px black;
+    margin-bottom: 25px;
+}
 
+p.blog-time {
+    font-size: 12px;
+    color: gray;
+    margin: 0 5px 5px 12px;
+    padding-left: 5px;
+    border-left: solid 3px black;
+}
+/* a tags to previous dates */
+div.blog-right-content {
+    flex-direction: column;
+    width: 15%;
+    border-left: dashed 1px black;
+    padding-left: 12px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+ul.blog-nav li a {
+    text-decoration: none;
+}
 footer {
     width: 100%;
     background: black;
