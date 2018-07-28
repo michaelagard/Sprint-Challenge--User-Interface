@@ -74,10 +74,18 @@ p {
 header {
     display: flex;
     height: 40px;
-    margin: 25px 0 40px 0;
+    margin: 20px 0 40px 0;
     align-items: flex-end;
     justify-content: space-between;
 }
+header a {
+    align-items: flex-end;
+}
+
+.logo {
+    vertical-align: bottom;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -95,15 +103,16 @@ nav a {
 }
 .top-content {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+    /* justify-content: space-between; */
+    /* padding: 0 1%; */
+    /* padding-bottom: 20px; */
 }
 .top-content {
     padding: 0 20px;
@@ -128,7 +137,7 @@ nav a {
 }
 section.about-bottom-content {
     width: 95%;
-    margin: 0 auto 40px auto;
+    margin: -10px auto 40px auto;
     font-size: 15x;
 }
 /* about boxes with learn more buttons */
@@ -146,7 +155,7 @@ section.about-bottom-content {
     border-radius: 10px;
     background: white;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 section.middle-content h2 {
@@ -259,9 +268,9 @@ section.middle-content h2 {
 }
 /* blog page */
 .blog-middle-content {
-    margin: 0 auto 0 auto;
+    margin: 0 0 0 auto;
     display: flex;
-    width: 95%;
+    width: 97.5%;
     flex-direction: row;
 }
 div.blog {
@@ -286,21 +295,22 @@ p.blog-time {
     border-left: solid 3px black;
 }
 /* a tags to previous blog dates */
-div.blog-right-content {
+.blog-right-content {
     flex-direction: column;
-    width: 15%;
-    border-left: dashed 1px black;
+    width: 20%;
+    border-left: dashed 1px rgb(175, 175, 175);
     padding-left: 12px;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: right;
 }
 ul.blog-nav li {
-    font-size: 10px;
-    border-bottom: solid 1px grey;
+    font-size: 12px;
     line-height: 1.2;
     margin-bottom: 6px;
     text-align: right;
+    padding-bottom: 5px;
+    border-bottom: dashed 1px black;
 }
 footer {
     width: 100%;
