@@ -78,9 +78,19 @@ header {
     align-items: flex-end;
     justify-content: space-between;
 }
+
 header a {
     align-items: flex-end;
+    transition: 1s;
 }
+header a:hover {
+    color: lightblue;
+    transition: 0s;
+}
+/* @keyframes header-nav {
+    from {color: black;}
+    to {color: pink;}
+} */
 
 .logo {
     vertical-align: bottom;
@@ -148,14 +158,28 @@ section.about-bottom-content {
     margin-bottom: 60px;
 }
 
-.button-learn-more {
+.about-box a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 130px;
     height: 40px;
     border: solid 2px black;
     border-radius: 10px;
     background: white;
-    font-size: 16px;
-    font-weight: 500;
+    /* font-size: 16px; */
+    /* font-weight: 500; */
+}
+
+.about-box a:hover{
+    background-color: white;
+    animation-name: about-buttons;
+    animation-duration: 4s;
+}
+
+@keyframes about-buttons {
+    from {background-color: white;}
+    to {background-color: lightblue;}
 }
 
 section.middle-content h2 {
@@ -298,11 +322,12 @@ p.blog-time {
 .blog-right-content {
     flex-direction: column;
     width: 20%;
-    border-left: dashed 1px rgb(175, 175, 175);
+    border-left: dashed 1px rgb(150, 150, 150);
     padding-left: 12px;
     font-size: 14px;
     line-height: 1.5;
     text-align: right;
+    margin-bottom: 20px;
 }
 ul.blog-nav li {
     font-size: 12px;
