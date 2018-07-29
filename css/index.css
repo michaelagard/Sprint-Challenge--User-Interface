@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -53,8 +53,14 @@ table {
 
 html, body {
     height: 100%;
+    position: relative;
     font-family: 'Roboto', sans-serif;
 }
+
+/* *:before,
+*:after {
+ box-sizing: border-box;
+} */
 
 h1, h2, h3, h4, h5 {
     font-size: 18px;
@@ -66,9 +72,15 @@ p {
     line-height: 1.4;
 }
 
+
 .container {
     width: 800px;
     margin: 0 auto;
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 54px;
 }
 /* header css */
 header {
@@ -81,7 +93,7 @@ header {
 
 header a {
     align-items: flex-end;
-    transition: 1s;
+    /* transition: 1s; */
 }
 header a:hover {
     color: lightblue;
@@ -166,21 +178,23 @@ section.about-bottom-content {
     height: 40px;
     border: solid 2px black;
     border-radius: 10px;
-    background: white;
+    /* background: white; */
+    transition: .2s;
     /* font-size: 16px; */
     /* font-weight: 500; */
 }
 
 .about-box a:hover{
-    background-color: white;
-    animation-name: about-buttons;
-    animation-duration: 4s;
+    /* background-color: white; */
+    /* animation-name: about-buttons; */
+    background: lightblue;
+    transition: 0s;
 }
 
-@keyframes about-buttons {
+/* @keyframes about-buttons {
     from {background-color: white;}
     to {background-color: lightblue;}
-}
+} */
 
 section.middle-content h2 {
     margin-bottom: 20px;
@@ -322,7 +336,7 @@ p.blog-time {
 .blog-right-content {
     flex-direction: column;
     width: 20%;
-    border-left: dashed 1px rgb(150, 150, 150);
+    border-left: dashed 1px rgb(185, 185, 185);
     padding-left: 12px;
     font-size: 14px;
     line-height: 1.5;
@@ -340,6 +354,9 @@ ul.blog-nav li {
 footer {
     width: 100%;
     background: black;
+    position: absolute;
+    bottom: 0;
+
 }
 footer nav {
     width: 60%;
@@ -348,8 +365,55 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
+
 }
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.contact-container {
+    display: flex;
+    margin: 0 0 0 15px;
+}
+
+.hello-this-is-dog {
+    display: flex;
+    margin-left: auto;
+    align-self: flex-start;
+    width: 48%;
+}
+.contact-form {
+    display: flex;
+    width: 48%;
+    flex-direction: column;
+    align-content: flex-start;
+}
+.contact-form input {
+    display: flex;
+    width: auto;
+    height: 30px;
+    margin: 4px;
+}
+.contact-page h1 {
+    font-size: 35px;
+}
+
+#message-box {
+    height: 200px;
+    resize: none;
+}
+.form-submit {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 40px;
+    border: solid 2px black;
+    border-radius: 10px;
+    /* background: white; */
+    transition: .2s;
+    /* font-size: 16px; */
+    /* font-weight: 500; */
 }
