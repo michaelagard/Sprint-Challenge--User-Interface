@@ -55,6 +55,7 @@ html, body {
     height: 100%;
     position: relative;
     font-family: 'Roboto', sans-serif;
+    overflow-y:scroll;
 }
 
 /* *:before,
@@ -374,44 +375,78 @@ footer nav a {
 
 .contact-container {
     display: flex;
-    margin: 0 0 0 15px;
+    margin: 0 1% 0 1%;
+}
+.contact-page h1 {
+    /* text-align: center; */
+}
+.top-contact-content {
+    display: flex;
+    width: 98%;
+    margin: auto;
+    padding-bottom: 22px;
+    border-bottom: 1px dashed rgb(0, 0, 0);
+    flex-direction: row;
 }
 
+.time {
+    text-emphasis: ;
+}
+.top-contact-content-left {
+    margin: 0 30px 0 0;
+}
 .hello-this-is-dog {
     display: flex;
-    margin-left: auto;
+    margin: auto;
     align-self: flex-start;
-    width: 48%;
+    /* align-self: center; */
+    width: 45%;
 }
 .contact-form {
+    clear: both;
     display: flex;
-    width: 48%;
+    width: 55%;
+    margin: 16px 0 20px 0;
     flex-direction: column;
-    align-content: flex-start;
+    /* align-items: flex-end; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border-top: 1px dashed black;
+    padding-top: 20px; */
 }
 .contact-form input {
     display: flex;
-    width: auto;
-    height: 30px;
-    margin: 4px;
-}
-.contact-page h1 {
-    font-size: 35px;
+    align-self: flex-start;
+    width: 100%;
+    height: 40px;
+    margin: 4px 0 4px 0;
+    border: 2px solid grey;
+    padding: 15px;
 }
 
-#message-box {
+.contact-page h1 {
+    font-size: 25px;
+}
+
+textarea {
     height: 200px;
     resize: none;
+    margin: 5px 0 12px 0;
+    width: 100%;
+    border: 2px solid grey;
+    padding: 15px;
+    font-family: "Roboto";
+    font-size: 14px;
 }
 .form-submit {
     display: flex;
-    align-self: flex-end;
     justify-content: center;
     align-items: center;
+    align-self: flex-end;
     width: 130px;
     height: 40px;
     border: solid 2px black;
-    border-radius: 10px;
+    border-radius: 5px;
     /* background: white; */
     transition: .2s;
     /* font-size: 16px; */
